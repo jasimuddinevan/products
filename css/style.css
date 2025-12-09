@@ -766,10 +766,7 @@ body.dark-mode .banner-warning {
     line-height: 1.8;
 }
 
-``` font-size: 1.15rem;
-margin-bottom: 0.5rem;
-font-family: var(--font-heading);
-}
+
 
 .product-price {
     color: var(--text-secondary);
@@ -1020,5 +1017,3 @@ body.dark-mode .banner-warning {
         gap: 2rem;
     }
 }
-
-```
