@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Pro UI Kit - Dark Mode",
+        "description": "A comprehensive UI kit for building modern dashboards and admin panels. Includes 50+ components, responsive layouts, and Figma source files.",
+        "price": "29.00",
+        "image": "https://placehold.co/600x400/161b22/FFF",
+        "link": "#"
+    },
+    {
+        "id": "2",
+        "title": "SaaS Landing Page Template",
+        "description": "High-conversion landing page template optimizing for SaaS products. Built with HTML/CSS and includes 5 variations.",
+        "price": "19.00",
+        "image": "https://placehold.co/600x400/1f242e/FFF",
+        "link": "#"
+    },
+    {
+        "id": "3",
+        "title": "E-commerce Icon Set",
+        "description": "200+ vector icons crafted for e-commerce shops. SVG, PNG, and AI formats included.",
+        "price": "12.00",
+        "image": "https://placehold.co/600x400/292e36/FFF",
+        "link": "#"
+    }
+]

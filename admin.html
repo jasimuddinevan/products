@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | DigitalStore</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .admin-section {
+            padding: var(--space-xl) 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-sm);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background-color: var(--bg-card);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .output-area {
+            margin-top: var(--space-lg);
+            background-color: #0d1117;
+            padding: var(--space-md);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .output-area textarea {
+            width: 100%;
+            height: 200px;
+            background: transparent;
+            border: none;
+            color: #79c0ff;
+            /* Code color */
+            font-family: 'Courier New', monospace;
+            resize: vertical;
+        }
+
+        .copy-btn {
+            margin-top: var(--space-sm);
+            background-color: var(--bg-card-hover);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .banner-warning {
+            background-color: rgba(210, 153, 34, 0.15);
+            border: 1px solid rgba(210, 153, 34, 0.4);
+            color: #e3b341;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: var(--space-lg);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Digital<span class="accent-text">Store</span>.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="admin.html" class="active">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Admin Section -->
+    <section class="admin-section">
+        <div class="container">
+            <h1 class="section-title">Add New Product</h1>
+
+            <div class="banner-warning">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>Note:</strong> Because this site is hosted statically (e.g., GitHub Pages), you cannot save
+                directly to the database.
+                Use this form to generate the JSON snippet, then copy and paste it into your
+                <code>data/products.json</code> file.
+            </div>
+
+            <form id="product-form">
+                <div class="form-group">
+                    <label class="form-label">Product Title</label>
+                    <input type="text" id="p-title" class="form-control" required placeholder="e.g. Modern UI Kit">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Price</label>
+                    <input type="number" id="p-price" class="form-control" step="0.01" required placeholder="29.00">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Image URL</label>
+                    <input type="url" id="p-image" class="form-control" required placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Buy/Download Link</label>
+                    <input type="url" id="p-link" class="form-control" required placeholder="https://gumroad.com/...">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Description</label>
+                    <textarea id="p-desc" class="form-control" rows="4" required
+                        placeholder="Product details..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate JSON</button>
+            </form>
+
+            <div id="output-container" class="output-area" style="display: none;">
+                <label class="form-label">JSON Snippet (Copy & Add to products.json)</label>
+                <textarea id="json-output" readonly></textarea>
+                <button id="copy-btn" class="btn copy-btn"><i class="far fa-copy"></i> Copy to Clipboard</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 DigitalStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
