@@ -1,5 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // --- Theme Logic ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = themeToggle ? themeToggle.querySelector('i') : null;
+
+    // Check saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        if (icon) icon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+
+            // Save preference
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+            // Update Icon
+            if (icon) {
+                if (isDark) {
+                    icon.classList.replace('fa-moon', 'fa-sun');
+                } else {
+                    icon.classList.replace('fa-sun', 'fa-moon');
+                }
+            }
+        });
+    }
+
+    // --- Product Logic ---
     const productGrid = document.getElementById('product-grid');
+
 
     // Fetch Products
     if (productGrid) {
@@ -63,7 +97,30 @@ function renderProducts(products) {
 
         productGrid.appendChild(productCard);
     });
+
+    // Trigger scroll animations for new elements
+    observeElements();
 }
+
+function observeElements() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => observer.observe(card));
+}
+
 
 function renderProductDetails(product) {
     const container = document.getElementById('product-details-container');
@@ -87,7 +144,22 @@ function renderProductDetails(product) {
             </div>
         </div>
     `;
+
+    // Animate details page elements slightly
+    const elements = container.querySelectorAll('.details-image, .details-content');
+    elements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease-out ' + (index * 0.2) + 's';
+
+        // Trigger reflow
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 100);
+    });
 }
+
 
 // Admin Form Logic
 const productForm = document.getElementById('product-form');

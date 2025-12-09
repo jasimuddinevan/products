@@ -1,18 +1,18 @@
 [
     {
         "id": "1",
-        "title": "Pro UI Kit - Dark Mode",
+        "title": "Pro UI Kit - Modern Light",
         "description": "A comprehensive UI kit for building modern dashboards and admin panels. Includes 50+ components, responsive layouts, and Figma source files.",
         "price": "29.00",
-        "image": "https://placehold.co/600x400/161b22/FFF",
+        "image": "https://placehold.co/600x400/58a6ff/FFF?text=UI+Kit",
         "link": "#"
     },
     {
         "id": "2",
-        "title": "SaaS Landing Page Template",
-        "description": "High-conversion landing page template optimizing for SaaS products. Built with HTML/CSS and includes 5 variations.",
+        "title": "SaaS Landing Page Bundle",
+        "description": "High-conversion landing page templates optimizing for SaaS products. Built with HTML/CSS and includes 5 variations.",
         "price": "19.00",
-        "image": "https://placehold.co/600x400/1f242e/FFF",
+        "image": "https://placehold.co/600x400/e9ecef/333?text=SaaS+Landing",
         "link": "#"
     },
     {
@@ -20,7 +20,143 @@
         "title": "E-commerce Icon Set",
         "description": "200+ vector icons crafted for e-commerce shops. SVG, PNG, and AI formats included.",
         "price": "12.00",
-        "image": "https://placehold.co/600x400/292e36/FFF",
+        "image": "https://placehold.co/600x400/6c757d/FFF?text=Icons",
+        "link": "#"
+    },
+    {
+        "id": "4",
+        "title": "3D Abstract Shapes",
+        "description": "A collection of 20 high-resolution 3D abstract shapes for modern web design.",
+        "price": "15.00",
+        "image": "https://placehold.co/600x400/fab1a0/333?text=3D+Shapes",
+        "link": "#"
+    },
+    {
+        "id": "5",
+        "title": "Minimalist Resume Templates",
+        "description": "Stand out with these clean, ATS-friendly resume templates. Word & Figma formats.",
+        "price": "9.00",
+        "image": "https://placehold.co/600x400/dfe6e9/333?text=Resumes",
+        "link": "#"
+    },
+    {
+        "id": "6",
+        "title": "Mobile App Wireframe Kit",
+        "description": "Speed up your mobile app prototyping with over 100 screens and components.",
+        "price": "24.00",
+        "image": "https://placehold.co/600x400/a29bfe/FFF?text=Wireframes",
+        "link": "#"
+    },
+    {
+        "id": "7",
+        "title": "Social Media Booster Pack",
+        "description": "Instagram, LinkedIn, and Twitter templates to boost your engagement.",
+        "price": "14.00",
+        "image": "https://placehold.co/600x400/0984e3/FFF?text=Social+Media",
+        "link": "#"
+    },
+    {
+        "id": "8",
+        "title": "SEO Strategy Notion Template",
+        "description": "Organize your content strategy and keyword research in Notion.",
+        "price": "10.00",
+        "image": "https://placehold.co/600x400/00cec9/FFF?text=SEO+Notion",
+        "link": "#"
+    },
+    {
+        "id": "9",
+        "title": "Code Snippet Manager",
+        "description": "A personal dashboard to save and organize your useful code snippets.",
+        "price": "18.00",
+        "image": "https://placehold.co/600x400/fdcb6e/333?text=Code+Manager",
+        "link": "#"
+    },
+    {
+        "id": "10",
+        "title": "Logo Design Masterclass",
+        "description": "A split-pdf guide on principles of timeless logo design.",
+        "price": "25.00",
+        "image": "https://placehold.co/600x400/e17055/FFF?text=Logo+Guide",
+        "link": "#"
+    },
+    {
+        "id": "11",
+        "title": "Font Pairings Guide 2024",
+        "description": "Curated list of Google Font pairings that look amazing together.",
+        "price": "5.00",
+        "image": "https://placehold.co/600x400/636e72/FFF?text=Fonts",
+        "link": "#"
+    },
+    {
+        "id": "12",
+        "title": "Email Newsletter Templates",
+        "description": "Responsive HTML email templates compatible with Mailchimp and ConvertKit.",
+        "price": "22.00",
+        "image": "https://placehold.co/600x400/55efc4/333?text=Emails",
+        "link": "#"
+    },
+    {
+        "id": "13",
+        "title": "React Admin Dashboard",
+        "description": "Full source code for a React-based admin dashboard with charts and tables.",
+        "price": "45.00",
+        "image": "https://placehold.co/600x400/00b894/FFF?text=React+Admin",
+        "link": "#"
+    },
+    {
+        "id": "14",
+        "title": "Podcast Cover Art Pack",
+        "description": "Professional podcast cover art templates to attract listeners.",
+        "price": "11.00",
+        "image": "https://placehold.co/600x400/d63031/FFF?text=Podcast",
+        "link": "#"
+    },
+    {
+        "id": "15",
+        "title": "Figma Design System",
+        "description": "A scalable design system for enterprise applications.",
+        "price": "39.00",
+        "image": "https://placehold.co/600x400/0984e3/FFF?text=Design+System",
+        "link": "#"
+    },
+    {
+        "id": "16",
+        "title": "Python Automation Scripts",
+        "description": "A collection of 10 generic python scripts to automate daily office tasks.",
+        "price": "15.00",
+        "image": "https://placehold.co/600x400/fd79a8/FFF?text=Python",
+        "link": "#"
+    },
+    {
+        "id": "17",
+        "title": "Startup Pitch Deck",
+        "description": "PowerPoint and Keynote templates for securing seed funding.",
+        "price": "20.00",
+        "image": "https://placehold.co/600x400/2d3436/FFF?text=Pitch+Deck",
+        "link": "#"
+    },
+    {
+        "id": "18",
+        "title": "Blender Texture Pack",
+        "description": "Realistic PBR textures for your 3D models.",
+        "price": "30.00",
+        "image": "https://placehold.co/600x400/ffeaa7/333?text=Textures",
+        "link": "#"
+    },
+    {
+        "id": "19",
+        "title": "Indie Game Sound Effects",
+        "description": "Retro 8-bit sound effects for game developers.",
+        "price": "8.00",
+        "image": "https://placehold.co/600x400/ff7675/FFF?text=SFX",
+        "link": "#"
+    },
+    {
+        "id": "20",
+        "title": "Lightroom Presets - Moody",
+        "description": "Presets to give your photos a moody, cinematic look.",
+        "price": "12.00",
+        "image": "https://placehold.co/600x400/6c5ce7/FFF?text=Presets",
         "link": "#"
     }
 ]
