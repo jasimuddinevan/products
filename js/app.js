@@ -138,7 +138,7 @@ function renderProductDetails(product) {
                 </div>
                 <div class="details-actions">
                     <a href="${product.link}" class="btn btn-primary buy-btn" target="_blank">
-                        Buy Now
+                        Get Access
                     </a>
                 </div>
             </div>
